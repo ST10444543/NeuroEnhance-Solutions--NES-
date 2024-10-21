@@ -1,10 +1,14 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 10px; /* Removed space between '10' and 'px' */
-  padding: 10px; /* Removed space between '10' and 'px' */
+  margin: 0; /* Set margin to 0 for full-screen usage */
+  padding: 0; /* Set padding to 0 for full-screen usage */
   background-image: url('imge/image3.jpeg');
   background-size: cover;
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-position: center; /* Center the background image */
   color: #333;
+  height: 100vh; /* Set height to full viewport height */
+  overflow: hidden; /* Prevent scrolling */
 }
 
 header {
@@ -48,11 +52,14 @@ nav a {
 
 section {
   padding: 20px;
-  margin: 20px auto;
-  max-width: 900px;
+  margin: 0 auto; /* Center the section */
+  max-width: 900px; /* Maintain a max width */
+  width: 90%; /* Make the section width responsive */
+  height: calc(100vh - 60px); /* Adjust height to fit below header */
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 h1, h2, h3 {
@@ -118,12 +125,12 @@ button {
   }
 
   body {
-      padding: 5px; /* Adjusted for smaller screens */
+      padding: 0; /* Maintain full-screen effect */
   }
 
   section {
-      margin: 10px; /* Adjusted for smaller screens */
-      padding: 15px; /* Adjusted for smaller screens */
+      margin: 0; /* Remove margins for full-screen */
+      padding: 15px; /* Adjusted for better usability */
   }
 
   button {
