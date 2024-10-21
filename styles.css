@@ -1,105 +1,105 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 10 px;
-    padding: 10 px;
-    background-image: url('imge/image3.jpeg');
-    background-size: cover;
-    color: #333;
-  }
-  
-  header {
-    background-color: rgba(44, 62, 80, 0.9);
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 120px;
-  }
-  
-  nav {
-    position: relative;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 10px; /* Removed space between '10' and 'px' */
+  padding: 10px; /* Removed space between '10' and 'px' */
+  background-image: url('imge/image3.jpeg');
+  background-size: cover;
+  color: #333;
+}
+
+header {
+  background-color: rgba(44, 62, 80, 0.9);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+.product-image, .featured-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(44, 62, 80, 0.9);
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media Queries for Hamburger Menu */
+@media (max-width: 768px) {
   nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .hamburger {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-  }
-  
-  section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  h1, h2, h3 {
-    color: #2c3e50;
-  }
-  
-  .product-image, .featured-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgba(44, 62, 80, 0.9);
-    color: white;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 5px;
-  }
-  
-  input, textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Media Queries for Hamburger Menu */
-  @media (max-width: 768px) {
-    nav ul {
       display: none;
       flex-direction: column;
       position: absolute;
@@ -107,14 +107,26 @@ body {
       width: 100%;
       top: 50px;
       left: 0;
-    }
-  
-    nav ul.active {
-      display: flex;
-    }
-  
-    .hamburger {
-      display: block;
-    }
   }
-  
+
+  nav ul.active {
+      display: flex;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  body {
+      padding: 5px; /* Adjusted for smaller screens */
+  }
+
+  section {
+      margin: 10px; /* Adjusted for smaller screens */
+      padding: 15px; /* Adjusted for smaller screens */
+  }
+
+  button {
+      padding: 8px; /* Adjusted for smaller screens */
+  }
+}
